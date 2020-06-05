@@ -1,7 +1,5 @@
 # Frontend
 
-# Frontend
-
 ## HTML
 
 - HTML가 무엇인지, html의 구성하는 것들은 어떤 것인지 파악하기
