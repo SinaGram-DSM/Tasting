@@ -16,6 +16,8 @@
 
     - npm -v도 입력해 봐서 npm이 제대로 깔렸는지도 확인해본다
 
+    - https://javacpro.tistory.com/62 <- 참고해서 설치하기
+
 2. Visual Studio Code 설치
 
     - https://code.visualstudio.com/ 에 접속한다.
@@ -30,12 +32,44 @@
 
     - 설치 버튼을 눌러서 설치를 진행한다
 
----
+    - https://kcmschool.com/195 <- 참고해서 설치하기
 
+---
 ## 자바스크립트 기초 문법
 
 ### 체험 때 꼭 알아야 할 것들
 
+### REPL
+
+- NodeJS를 설치하고 나서 자바스크립트를 실행시키는 방법
+
+- visual studio code 에서 **Ctrl + `** 을 누르면 터미널이 열림
+
+- 터미널에서 node를 입력
+
+```
+Welcome to Node.js v~
+Type ".help" for more information
+>
+```
+- 라는 창이 뜨면 여기서 자바스크립트 코드를 직접 입력하여 자바스크립트를 실행할 수 있음
+
+```
+> 1 + 2
+3
+> 'a' + 'b'
+'ab'
+>
+```
+
+- REPL을 종료하려면 **Ctrl + C**를 두 번 누르거나 **Ctrl + D**를 한번 누르면 됨
+
+- 자바스크립트 파일을 실행시키는 방법
+
+```
+PS C:/...> node 파일명
+```
+---
 ### 변수 선언
 
 - 자바스크립트에선 var, let, const로 변수를 선언할 수 있으며, 타입은 직접 지정하지 않아도 된다.
@@ -90,7 +124,7 @@ function plus(a, b, callback) {
 
 plus(1, 2, function(result) {
     console.log(result);
-});
+}); // 3
 ```
 ---
 ### 화살표 함수
@@ -107,5 +141,63 @@ const func = function (a, b) {
 const arrowFunc = (a, b) => {
     return a + b;
 } // arrow function
+
+func(1, 2); // 3
+
+arrowFunc(1, 2); // 3
 ```
 ---
+### 객체
+
+- 키(key)와 값(value)으로 이루어진 프로퍼티의 집합
+
+``` javascript
+const obj = {
+    name: "홍길동",
+}
+// 여기서 name이 키, 홍길동이 값. 키와 값을 묶어서 프로퍼티라고 부른다
+```
+
+- 자바스크립트의 거의 모든 것이 객체임
+
+- 자바스크립트에선 객체 안의 프로퍼티에 접근할 때 . 을 사용함
+
+``` javascript
+const obj = {
+    name: "홍길동",
+}
+
+console.log(obj.name); // 홍길동
+```
+
+- 객체의 키에 대응하는 값으로 함수가 들어갈 수도 있음
+
+``` javascript
+const obj = {
+    name: "홍길동",
+    sayHello() {
+        console.log("Hello");
+    }
+}
+
+obj.sayHello(); // Hello
+```
+
+- this 를 이용하여 해당 객체의 키값에 접근할 수 있음
+
+``` javascript
+const obj = {
+    name: "홍길동",
+    sayHello() {
+        console.log("Hello" + this.name);
+    }
+}
+
+obj.sayHello(); // Hello 홍길동
+```
+---
+
+
+이해 안가면 선배한테 슬랙이나 페메로 물어보세요 선배들이 슬랙 페메 안보면 직접 와도됨
+
+꼭 이해 못해도 괜찮아요. 이런 것도 있구나 하는 마인드로 한번 쭉 읽어봐 주세요.
