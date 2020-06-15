@@ -16,12 +16,12 @@
 1. 직접 code 짜보기 
    - JS를 이용 (JS 기본 문법 C와 비교해서 설명)
    - 화면에 "<h1>Hello, world</h1>" 띄우기 
-   - HTML 파일을 만들어서 해당 파일을 화면에 띄우기
+   - 프론트엔드 시간에 제작한 웹 페이지 화면에 띄우기
 2. 중간 설명
    - 모듈(http, fs, require()),  - 간단하게 모듈이 뭔지
    - __dirname -> console로 찍으면서 설명
    - request, response 복습 설명
-   - port 간단 설명 
+   - port 간단 설명
 
 ### 세번째 시간
 
