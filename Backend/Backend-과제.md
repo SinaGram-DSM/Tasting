@@ -83,7 +83,8 @@ const c = 1;
 ```
 
 - var, let, const로 변수를 선언할 수 있지만, 보통은 let과 const만 사용하는 것이 좋다.
-https://hianna.tistory.com/314 <- 꼭 볼것
+
+- https://hianna.tistory.com/314 <- 꼭 볼것
 
 ---
 ### 출력
