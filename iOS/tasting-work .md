@@ -1,22 +1,52 @@
-## 사전과제
+## 숙제
 
 * Play 시킬 음악
 * 그 음악의 표지 사진 가져오기
-* 다음 내용 숙지하기
+* 과제 숙지하기
 
-// 피드백은 주석으로
 
-// 맥북 사용하는 친구들이 거의 없으니까 여기서는 빼고 Xcode 사용하는 방법은 첫번째시간에 다같이 해보면서 익히는게 좋을 거 같다!
 
-## Xcode와 delegate
+## 문법 숙제
 
-Xcode : https://blog.naver.com/pahapck0/220582697590
+#### 변수와 상수
 
-Delegate : https://zeddios.tistory.com/8
+- 우리는 변수나 상수를 이용해 프로그램에서 사용되는 데이터를 메모리에 임시로 저장함
 
-// 델리게이트는 문법 뒤에 배치하는게 이해하기 쉬울 것 같다!
+- 이때 변수와 상수는 특정 데이터 타입에 해당하는 값의 이름이다
 
-## 문법
+- 변수는 생성 후 데이터 값을 변경할 수 있지만 상수는 한번 값을 설정하면 변경 불가능
+
+  
+
+##### 변수
+
+- var [변수명] : [데이터 타입] = [값] 의 형태로 선언함
+
+- 데이터 타입은 생략 가능
+
+  ```swift
+  var name : String = "hyun"
+  var age : Int = 99
+  var job = "iOS Programmer" // 타입 추론 사용
+  age = 100 // 가능
+  ```
+
+
+
+##### 상수
+
+- let  [변수명] : [데이터 타입] = [값] 
+
+- 변수와 같게 데이터 타입은 생략이 가능
+
+- ```swift
+  let name : String = "hyun" // 차후 변경하지 않는 값은 상수로 선언함
+  let age : Int = 99
+  age = 100 // 오류
+  ```
+
+
+
 
 #### 자료형
 
@@ -78,7 +108,7 @@ var integer : Int = -100
 - *String*
 
   ```swift
-  let name : String = "HyunWook"
+  let name : String = "Younghee"
   ```
 
   
@@ -89,6 +119,8 @@ var integer : Int = -100
 
 - 문자열 내에 \\(변수나 상수)의 형태로 표기하면 이를 문자열로 치환해서 넣는다
 
+  
+
 - *문자열 보간법 사용법*
 
   ```swift
@@ -97,45 +129,6 @@ var integer : Int = -100
   ```
 
   
-
-#### 변수와 상수
-
-- 변수나 상수를 이용해 프로그램에서 사용되는 데이터를 메모리에 임시로 저장함
-
-- 이때 변수와 상수는 특정 데이터 타입에 해당하는 값의 이름이다
-
-- 변수는 생성 후 데이터 값을 변경할 수 있지만 상수는 한번 값을 설정하면 변경 불가능
-
-  
-
-##### 변수
-
-- var [변수명] : [데이터 타입] = [값] 의 형태로 선언함
-
-- 데이터 타입은 생략 가능
-
-  ```swift
-  var name : String = "hyun"
-  var age : Int = 99
-  var job = "iOS Programmer" // 타입 추론 사용
-  age = 100 // 가능
-  ```
-
-
-
-##### 상수
-
-- let  [변수명] : [데이터 타입] = [값] 
-
-- 변수와 같게 데이터 타입은 생략이 가능
-
-- ```swift
-  let name : String = "hyun" // 차후 변경하지 않는 값은 상수로 선언함
-  let age : Int = 99
-  age = 100 // 오류
-  ```
-
-
 
 #### 함수
 
@@ -166,6 +159,8 @@ var integer : Int = -100
 
 - 반환 타입을 명시하기 전에는 ->를 사용하여 어떤 타입이 반환될 것인지 명시해줌, 반환을 위한 키워드는 return
 
+  
+
 - *기본 형태의 함수 정의 사용*
 
   ```swift
@@ -179,86 +174,13 @@ var integer : Int = -100
 
 - **NOTE** - 매개변수와 전달인자
 
-  ```
+- ```swift
   매개변수는 함수를 정의할 때 외부로부터 받아들이는 전달 값의 이름을 의미함
   전달인자 혹은 인자는 함수를 실제로 호출할 때 전달하는 값을 의미함
   예를 들어 함수에서 매개변수는 name이고, 실제 사용 시 전달받는 값인 "Jenny"가 전달인자다
   ```
 
    
-
-##### 매개변수가 없는 함수와 매개변수가 여러 개인 함수
-
-- 매개변수가 필요없다면 매개변수 위치를 공란으로 비워둠
-
-- *매개변수가 여러 개인 함수의 정의와 사용*
-
-  ```swift
-  func satHello(myName : String, yourName : String) -> String {
-  	return "Hello \(yourName) My name is \(myName)"
-  }
-  
-  print(sayHello(myName : "Hyunwook" , yourName : "Jenny"))
-  ```
-
-  
-
-
-  ##### 매개변수 이름과 전달인자 레이블
-
-  - 위의 코드에서 sayHello(myName:yourName:)함수를 호출할 때 myName과 yourName이라는 매개변수 이름을 사용했음
-
-  - 매개변수 이름과 더불어 전달인자 레이블을 지정해줄 수 있음
-
-  - 전달인자 레이블과 매개변수 이름을 같은 이름으로 사용할 수 있지만 전달인자 레이블을 별도로 지정하면 함수 외부에서 매개변수의 역할을 좀 더 명확히 할 수 있음
-
-  - 전달인자 레이블을 사용하려면 매개변수 이름 앞에 한 칸을 띄운 후 전달인자 레이블을 지정
-
-  - *매개변수 이름과 전달인자 레이블을 가지는 함수 정의와 사용*
-
-    ```swift
-    func satHello(from myName : String, to yourName : String) -> String {
-    	return "Hello \(yourName) My name is \(myName)"
-    }
-    
-    print(sayHello(from : "Hyunwook" , to : "Jenny"))
-    ```
-
-  - 함수 내부에서 전달인자 레이블을 사용할 수 없고, 함수를 호출할 때는 매개변수 이름을 사용할 수 없음
-
-  - 전달인자 레이블을 변경하면 함수의 이름 자체가 변경됨 -> 전달인자 레이블만 다르게 써주더라도 함수 중복 정의(오버로드)로 동작할 수 있음
-
-  
-
-// 이거 예제에서 사용되는거 아니면 안 넣어도 될 거 같다!
-
-  ##### 매개변수 기본값
-
-  - 매개변수마다 기본값을 지정할 수 있음 -> 매개변수가 전달되지 않으면 기본값 사용
-
-  - *매개변수 기본값이 있는 함수의 정의와 사용*
-
-    ```swift
-    func satHello( _ name : String, times : Int = 3) -> String {
-    	var result : String = ""
-    	
-    	for _ in 0..< times {
-    		result += "Hello \(name)"+""
-    	}
-    	return result
-    }
-    
-    print(sayHello("Hana"))  //times 매개변수의 전달 값을 넘겨주지 않아 기본값 3을 반영해서 세 번 출력함
-    												 //"Hello Hana Hello Hana Hello Hana"
-    print(sayHello("Joe", times : 2)) // times 매개변수의 전달 값을 2로 넘겨주었기 때문에 두 번 출력함
-    ```
-
-  - 기본값이 없는 매개변수를 기본값이 있는 매개변수 앞에 사용하도록 함
-
-  - 무엇보다 기본값이 있는지와 상관 없이 중요한 매개변수는 앞쪽에 배치하는 것이 좋음
-
- 
-
 
   ##### 반환 타입
 
@@ -281,6 +203,31 @@ var integer : Int = -100
     ```
 
     
+
+    
+
+##### 매개변수가 없는 함수와 매개변수가 여러 개인 함수
+
+- 매개변수가 필요없다면 매개변수 위치를 공란으로 비워둠
+
+  ```swift
+  func sayHello(){
+  	print("Hello")
+  }
+  
+  sayHello()
+  ```
+
+- *매개변수가 여러 개인 함수의 정의와 사용*
+
+  ```swift
+  func satHello(myName : String, yourName : String) -> String {
+  	return "Hello \(yourName) My name is \(myName)"
+  }
+  
+  print(sayHello(myName : "Younghee" , yourName : "Jenny"))
+  ```
+
 
 
 
@@ -435,3 +382,10 @@ var integer : Int = -100
 
 
 
+#### Delegate
+
+https://zeddios.tistory.com/8
+
+이 블로그 참고해서 이해하려고 노력해봐요~ 이번 프로젝트에서 쓰일 개념이라 꼼꼼히 봐줬으면 좋겠어요!
+
+이해안될수도있는데 당연한거!! 걱정 노노
