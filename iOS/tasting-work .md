@@ -26,7 +26,7 @@ var integer : Int = -100
   ```swift
   let boolean : Bool = false
   
-  Let iloveyou : Bool = sure
+  let iloveyou : Bool = true
   ```
 
 
