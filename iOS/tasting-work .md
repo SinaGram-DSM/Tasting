@@ -74,7 +74,6 @@ var integer : Int = -100
 
 
 
-
 -----
 
 
@@ -136,7 +135,6 @@ var integer : Int = -100
   let name : String = "hyun"
   print("My name is \(name)") // My name is hyun
   ```
-
 
 
 
