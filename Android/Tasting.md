@@ -2,6 +2,14 @@
 설치가이드: https://m.blog.naver.com/pyj721aa/221275562630  
 
 # JAVA 문법
+
+## 객체지향이란
+참고하면 좋은 자료: https://jeong-pro.tistory.com/95
+- 기능 별로 코드를 객체라는 단위로 분리한 것
+- 장점  
+    1. 코드의 길이가 줄어든다.
+    2. 코드를 재사용할 수 있다.
+
 ## 자료형
 ### Int
 ```java
@@ -64,6 +72,7 @@ public class Test {
 
 
 # 화면 동작 기능
+- xml, Java 코드 다 참고하기!
 ### 인텐트
 공식문서: https://developer.android.com/guide/components/intents-filters?hl=ko  
 참고자료:https://medium.com/android-develop-android/android-%EA%B0%9C%EB%B0%9C-8-intent%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EC%95%A1%ED%8B%B0%EB%B9%84%ED%8B%B0-%EC%A0%84%ED%99%98%ED%95%98%EA%B8%B0-4d8b64078427
