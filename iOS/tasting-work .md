@@ -354,6 +354,7 @@ var integer : Int = -100
 
 #### 클래스
 
+- Swift는 객체 지향 언어이다. 객체 지향은 일반적으로 __클래스 기반__ 아러는 것이다. 클래스에 생성된 객체를 __인스턴스__ 라고 한다. 
 - 스위프트의 클래스는 부모클래스가 없더라도 상속 없이 단독으로 정의가 가능하다
 
 
@@ -372,13 +373,27 @@ var integer : Int = -100
   }
   ```
 
+- 예시
+
+  ```swift
+  class Hello{
+  	var name = "younghee"
+  	
+  	func say(){
+  		print("Hello, " + name) //Hello, younghee 출력
+  	}
+  }
+  ```
+
   
+
+
 
 ##### 클래스 인스턴스의 생성과 초기화
 
 - 클래스 정의 후, 인스턴스를 생성하고 초기화하고자 할 때는 기본적인 이니셜라이저를 사용
 
-- 인스턴스가 생성되고 초기화된 후 프로퍼티 값에 접근하고 싶다면 마침표(.)를 사용하면 됨
+- 인스턴스가 생성되고 초기화된 후 프로퍼티 값에 접근하고 싶다면 __마침표(.)__를 사용하면 됨
 
 - 구조체와 다르게 클래스의 인스턴스는 참조 타입이므로 클래스의 인스턴스를 상수 let으로 선언해도 내부 프로퍼티 값을 변경할 수 있다
 
@@ -389,11 +404,11 @@ var integer : Int = -100
   }
   // Float타입인 height와 weight 저장 프로퍼티가 있는 Person 클래스이다
   
-  var hyun : Person = Person() 
-  hyun.height = 123.4
+  var hyun : Person = Person() //인스턴스 생성
+  hyun.height = 123.4 //메소드 호출
   hyun.weight = 123.4
   
-  let jenny : Person = Person()
+  let jenny : Person = Person() //인스턴스 생성
   jenny.height = 123.4
   jenny.weight = 123.4
   ```
