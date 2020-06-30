@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                Log.e("dsfsdf", s.toString());
+                Log.e("textLog", s.toString());
                 if(s.toString().equals("네이버")){
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.naver.com")));
                 }
