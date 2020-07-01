@@ -44,14 +44,17 @@
 
 <br>
 
-## 섹션 2. 서버 랜더링 실습   // 🛠 FIXME
+## 섹션 2. 서버 랜더링 실습
 
-- 개발 환경 셋팅
-   -  node js, vscode 설치및 셋 완료
 - 코드 작성 
    - JS를 이용 (JS 기본 문법 C와 비교해서 설명)
    - 화면에 **\<h1>Hello, world\</h1>** 띄우기 
    - 프론트엔드 시간에 제작한 웹 페이지 화면에 띄우기
+- 중간 설명
+   - 모듈(http, fs, require()),  - 간단하게 모듈이 뭔지
+   - __dirname -> console로 찍으면서 설명
+   - request, response 복습 설명
+   - port 간단 설명
 
 <br>
 
@@ -87,17 +90,11 @@
 
 <br>
 
-## 섹션 4. 서버 CRUD 실습  // 🛠 FIXME
+## 섹션 4. 서버 CRUD 실습
 
-중간 설명
-   - 모듈(http, fs, require()),  - 간단하게 모듈이 뭔지
-   - __dirname -> console로 찍으면서 설명
-   - request, response 복습 설명
-   - port 간단 설명
-
-express 프레임워크를 사용하여 간단한 핑퐁 api 만들기
-   - 프레임워크란 무엇이고 왜 사용하는 것인가 (코드 전후비교)
-   - http 메소드 (get) 사용
-   - 라우팅 설명
+- 섹션 3에서 배운 내용을 갖고 CRUD 서버 만들기
+- DB 대신 객체배열을 만들어서 사용
+- GET, POST, PUT, DELETE의 기능을 직접 만들어 보기
+- postman으로 테스트
 
 질문 받기
