@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+section > img
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    opacity: 0.5;
+}
+
+#MainSection
+{
+    height: 100vh;
+}
+
+#MainSection > article
+{
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    color: white;
+    text-align: center;
+}
+
+#MainSection > article > h1
+{
+    font-size: 60px;
+}
+
+#MainSection > article > p
+{
+    font-size: 35px;
+}
+
+ul,li
+{
+    list-style: none;
+}
+
+li > a 
+{
+    text-decoration: none;
+}

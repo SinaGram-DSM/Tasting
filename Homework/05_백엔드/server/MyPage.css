@@ -1,0 +1,119 @@
+body{
+    text-align: center;
+    background-image: url("핑크.jpg");
+    margin: 0;
+}
+img{  
+    position: relative;    
+}
+.title{
+    position: absolute;
+    top: 310px;
+    left: 850px;
+}
+.number{
+    position: absolute;
+    top: 400px;
+    left: 870px;
+}
+#man{
+
+    border-radius: 150px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    top: -750px;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+#container{
+    position: relative;
+    width: 100%-20px;
+    height: 1600px;
+    top: 1000px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    background-color: pink;
+}
+#berry{
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    top: 100px;
+    right: 150px;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+#mac{
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    top: 100px;
+    left: 150px;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+#bread{
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    top: 500px;
+    left: 745px;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+#jelly{
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    top: 900px;
+    left: 150px;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+#candy{
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    top: 900px;
+    right: 150px;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+#stro{
+    position: absolute;
+    top: 520px;
+    right: 330px;
+}
+#rong{
+    position: absolute;
+    top: 520px;
+    left: 340px;
+}
+#cream{
+    position: absolute;
+    top: 920px;
+    left: 935px;
+}
+#fruit{
+    position: absolute;
+    top: 1320px;
+    left: 340px;
+}
+#coke{
+    position: absolute;
+    top: 1320px;
+    right: 310px;
+}
