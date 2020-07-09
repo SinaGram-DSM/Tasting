@@ -1,0 +1,29 @@
+header {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    padding-top: 30px;
+    font-weight: 900;
+    font-family: Arial;
+}
+body{
+    background-color: #FBCD9B;
+    text-align: center;
+}
+
+#img_me{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+.qkqh p {
+    padding-top: 200px;
+}
