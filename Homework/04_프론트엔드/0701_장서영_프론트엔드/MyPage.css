@@ -1,0 +1,67 @@
+body{
+    margin : 0;
+    background-image: url('landscape-5055384_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    left: 860px;
+    top: 120px;
+    font-size: 40px;
+
+}
+
+.introduceBox{
+    position: relative;
+    top: 480px;
+    background-color: #2F4858;
+    width: auto;
+    height: 383px;
+    padding: 80px;
+}
+.introduceBox > h3{
+    
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    position: relative;
+    left: 350px;
+    top:44px;
+}
+
+.introduceBox > span{
+    color : white;
+    font-size: 30px;
+    font-weight: 700;
+    left:350px;
+    top: 44px;
+    position: relative;
+    
+}
+
+.Box2{
+    float: right;
+}
+
+.Box2 > h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    bottom:146px;
+    right:250px;
+    position: relative;
+ 
+}
+
+.Box2 > span {
+    color : white;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    bottom:146px;
+    right:250px;
+}
