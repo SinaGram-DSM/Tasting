@@ -1,0 +1,33 @@
+body
+{
+    background-color: salmon;
+    text-align: center;
+}
+
+#Title
+{
+    color: white;
+    font-size: 30px;
+}
+
+img
+{
+    width: 300px;
+    height: 300px;
+}
+
+#Profile
+{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 50px;
+    color: white;
+}
+
+#Email
+{
+    color: white;
+    margin-top: 230px;
+    font-size: 20px;
+    font-weight: lighter;
+}
